@@ -84,6 +84,11 @@ namespace SparkfishAssessment.Utility.Listifier
             return false;
         }
 
+        /// <summary>
+        /// Copies the collection to another array.  Not implemented
+        /// </summary>
+        /// <param name="array">Array to copy to</param>
+        /// <param name="arrayIndex">Index in the array where copying is to begin</param>
         public void CopyTo(int[] array, int arrayIndex)
         {
             throw new NotImplementedException();
