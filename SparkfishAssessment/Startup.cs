@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using SparkfishAssessment.Contracts.Services;
+using SparkfishAssessment.Services.Listifier;
 
 namespace SparkfishAssessment
 {
@@ -25,6 +27,9 @@ namespace SparkfishAssessment
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Register services with DI container
+            services.AddTransient<IListifierService, ListifierService>();
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

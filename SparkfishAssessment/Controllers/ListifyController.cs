@@ -3,34 +3,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SparkfishAssessment.Contracts.Services;
 using SparkfishAssessment.Utility.Listifier;
 
 namespace SparkfishAssessment.Controllers
 {
-
+    /// <summary>
+    /// Controller for Listify-related functionality.
+    /// </summary>
     [ApiController]
     public class ListifyController : ControllerBase
     {
+        private readonly IListifierService listifierService;
+        
+        /// <summary>
+        /// ListifyController constructor
+        /// </summary>
+        /// <param name="_listifierService">Injected implementation of IListifierService</param>
+        public ListifyController(IListifierService _listifierService)
+        {
+            this.listifierService = _listifierService;
+        }
+
+        /// <summary>
+        /// Given an enumerable range based on the provided start and end values, retrieve the value at
+        /// the specified index.
+        /// </summary>
+        /// <param name="start">Starting value for the range in the collection</param>
+        /// <param name="end">Ending value for the range in the collection</param>
+        /// <param name="idx">Index of the value in the collection to retrieve</param>
+        /// <returns></returns>
         [Route("listify/{start}/{end}/index/{idx}")]
         [HttpGet]
         public ActionResult<int> Get(int start, int end, int idx)
         {
-            // Given a list of numbers ranging from 100 to 200
-            var list = new Listify(start, end);
-            // When I access index position 50
-            var val = list[idx];
-            // Then I should get back a value of 150
-            //val.Should().Equal(150);
-
-            var newIndex = list.IndexOf(150);
-
-            return val;
-        }
-
-        [Route("Test")]
-        public ActionResult<string> Test()
-        {
-            return "Success";
+            return listifierService.GetValueByIndex(start, end, idx);
         }
     }
 }

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SparkfishAssessment.Contracts\SparkfishAssessment.Contracts.csproj" />
+    <ProjectReference Include="..\SparkfishAssessment.Utility\SparkfishAssessment.Utility.csproj" />
+  </ItemGroup>
+
+</Project>

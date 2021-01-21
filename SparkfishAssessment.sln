@@ -5,7 +5,13 @@ VisualStudioVersion = 15.0.28307.1300
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SparkfishAssessment", "SparkfishAssessment\SparkfishAssessment.csproj", "{88E2D4FA-EAFA-45B6-88F1-1CA68B9F6A00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SparkfishAssessment.Utility", "SparkfishAssessment.Utility\SparkfishAssessment.Utility.csproj", "{8B0A37BF-934D-45D1-B55D-FCBF4F6CE9D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SparkfishAssessment.Utility", "SparkfishAssessment.Utility\SparkfishAssessment.Utility.csproj", "{8B0A37BF-934D-45D1-B55D-FCBF4F6CE9D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SparkfishAssessment.Contracts", "SparkfishAssessment.Contracts\SparkfishAssessment.Contracts.csproj", "{05934C16-428C-4AE2-83B1-BA94A4174E8F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SparkfishAssessment.Services.Listifier", "SparkfishAssessment.Services.Listifier\SparkfishAssessment.Services.Listifier.csproj", "{4468C0AD-5EE2-4225-BA28-75E95CB1B803}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SparkfishAssessment.Tests", "SparkfishAssessment.Tests\SparkfishAssessment.Tests.csproj", "{DD7E4C42-F432-4541-A8C0-05EA0871AB6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{8B0A37BF-934D-45D1-B55D-FCBF4F6CE9D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B0A37BF-934D-45D1-B55D-FCBF4F6CE9D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B0A37BF-934D-45D1-B55D-FCBF4F6CE9D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05934C16-428C-4AE2-83B1-BA94A4174E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05934C16-428C-4AE2-83B1-BA94A4174E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05934C16-428C-4AE2-83B1-BA94A4174E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05934C16-428C-4AE2-83B1-BA94A4174E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4468C0AD-5EE2-4225-BA28-75E95CB1B803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4468C0AD-5EE2-4225-BA28-75E95CB1B803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4468C0AD-5EE2-4225-BA28-75E95CB1B803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4468C0AD-5EE2-4225-BA28-75E95CB1B803}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD7E4C42-F432-4541-A8C0-05EA0871AB6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD7E4C42-F432-4541-A8C0-05EA0871AB6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD7E4C42-F432-4541-A8C0-05EA0871AB6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD7E4C42-F432-4541-A8C0-05EA0871AB6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
