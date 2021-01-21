@@ -26,5 +26,11 @@ namespace SparkfishAssessment.Controllers
 
             return val;
         }
+
+        [Route("Test")]
+        public ActionResult<string> Test()
+        {
+            return "Success";
+        }
     }
 }
