@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1300
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SparkfishAssessment", "SparkfishAssessment\SparkfishAssessment.csproj", "{88E2D4FA-EAFA-45B6-88F1-1CA68B9F6A00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SparkfishAssessment", "SparkfishAssessment\SparkfishAssessment.csproj", "{88E2D4FA-EAFA-45B6-88F1-1CA68B9F6A00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SparkfishAssessment.Utility", "SparkfishAssessment.Utility\SparkfishAssessment.Utility.csproj", "{8B0A37BF-934D-45D1-B55D-FCBF4F6CE9D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{88E2D4FA-EAFA-45B6-88F1-1CA68B9F6A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88E2D4FA-EAFA-45B6-88F1-1CA68B9F6A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88E2D4FA-EAFA-45B6-88F1-1CA68B9F6A00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B0A37BF-934D-45D1-B55D-FCBF4F6CE9D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B0A37BF-934D-45D1-B55D-FCBF4F6CE9D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B0A37BF-934D-45D1-B55D-FCBF4F6CE9D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B0A37BF-934D-45D1-B55D-FCBF4F6CE9D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
